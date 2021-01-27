@@ -14,7 +14,10 @@ In this activity users are able to use a note-taking application to create, read
 To run the application locally, first clone this repository.
 	
 Next, install the following dependencies:
+(npm init)
 - express
+- node
+- mysql
 	
 Finally, run the node server locally.
 
