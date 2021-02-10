@@ -1,14 +1,24 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "![License](https://img.shields.io/badge/License-AGPL-blue.svg?style=plastic)",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amarz94/notetaker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Amarz94/notetaker/issues"
+  },
+  "homepage": "https://github.com/Amarz94/notetaker#readme"
 }
