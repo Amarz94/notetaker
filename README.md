@@ -1,28 +1,57 @@
-# Note Taker 
 
-### Description
-In this activity users are able to use a note-taking application to create, read, and delete notes from a MySQL database. 
+  ![License](https://img.shields.io/badge/License-AGPL-blue.svg?style=plastic)
 
-### Languages used
+# EXPRESS Note Taker
 
--Node
--Express
--and MySQL
-  
-## Installation
+![mdGIF](notetaker.gif)
 
-To run the application locally, first clone this repository.
-	
-Next, install the following dependencies:
-(npm init)
-- express
-- node
-- mysql
-	
-Finally, run the node server locally.
+## Version:
+1.0.0
 
--node server.js
-	
-Now, open the local application on port 8080 at the URL: `http://localhost:3000/`.
-  
+## Table of Contents:
+* TITLE
+* VERSION
+* DESCRIPTION
+* INSTALLATION
+* USAGE
+* LICENSE
+* CONTRIBUTING
+* TESTS
+* CONTACT
+
+
+## Description of EXPRESS Note Taker:
+Using an express backend, notes entered by user are saved and retrieved from a JSON file.
+
+### User Story: 
+* AS A user, I want to be able to write and save notes 
+* I WANT to be able to delete notes I've written before 
+* SO THAT I can organize my thoughts and keep track of tasks I need to complete
+
+
+## Installation: 
+### Use the following instruction to install: 
+
+App is deployed to Heroku here: https://afeese-note-taker.herokuapp.com/. 
+If choosing to use from terminal, open terminal and run    
+```node server.js```   
+
+Then in browser, search 
+```localhost:8000``` 
+
+
+
+
+## Usage: 
+EXPRESS Note Taker is intended to be used for anyone who needs a place to organize their tasks and thoughts. 
+
+
+
+
+## License: 
+![License](https://img.shields.io/badge/License-AGPL-blue.svg?style=plastic)
+
+
+### Questions? Contact:
+AFeese, ashleyfeese@outlook.com
 

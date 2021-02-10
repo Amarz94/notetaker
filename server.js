@@ -1,28 +1,28 @@
-// import all of the node modules we installed and need to run this app 
-var mysql = require("mysql");
-var express = require("express");
-var apiRoutes = require("./routes/apiRoutes");
-var htmlRoutes = require("./routes/htmlRoutes");
+// Dependencies
+const express = require('express');
+// const path = require('path');
+// const fs = require('fs');
+const PORT = process.env.PORT || 8000;
 
-// create an express application
+//Testing, not really needed here
+const dbJson = require('./db/db.json')
+
+// Sets up the Express App
 const app = express();
-var PORT = process.env.PORT || 3000;
 
-// load all of the middleware
-// 13-express 11-express-static-router
+//Accesses public file mainly for proper CSS loading
+app.use(express.static(__dirname + '/public'));
+app.use(express.static('./'));
+
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
-app.use(express.static("public"));
 
-// use API and HTML routes
-// 13-express 11-express-static-router
-// api routes store and retrieve data from the data array. this mimics fetching data from a database and saving to it
-// html files or static routes are the views of our app and they will make requests to the API routes to fetch and update the data
-app.use(apiRoutes);
-app.use(htmlRoutes);
+//Require the Routes.js files in order to communicate when to generate api routes and html files
+require("./apiRoutes")(app);
+require("./htmlRoutes")(app);
 
-// start the application
-app.listen(PORT, function() {
-  console.log("Now listening on PORT: ", PORT);
+
+// Starts the server to begin listening
+app.listen(PORT, function () {
+    console.log("App listening on PORT " + PORT);
 });
-
